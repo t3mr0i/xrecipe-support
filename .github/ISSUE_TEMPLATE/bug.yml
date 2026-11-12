@@ -1,0 +1,42 @@
+name: Report a problem
+description: Something in xRecipe did not work as expected.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Do not include account emails, passwords, tokens, private photos or raw account logs. For account deletion use Settings → Delete account."
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where did it happen?
+      options:
+        - iPhone app
+        - Web app
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version and device
+      description: For example app 1.0, iPhone/iOS version, or browser version. No serial numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Steps to reproduce, what you expected and what actually happened.
+    validations:
+      required: true
+  - type: input
+    id: machine
+    attributes:
+      label: Machine model and firmware, if relevant
+      placeholder: xBloom Studio, firmware version
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public information
+      options:
+        - label: I have removed private account details and credentials.
+          required: true
