@@ -1,0 +1,14 @@
+name: Suggest an improvement
+description: Explain what you would like to do with xRecipe.
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Keep personal account details and credentials out of it."
+  - type: textarea
+    id: goal
+    attributes:
+      label: What would you like to do?
+      description: Describe the coffee workflow and the improvement you want.
+    validations:
+      required: true
